@@ -1,0 +1,111 @@
+---
+
+const services = [
+  {
+    title : "כרטיסי טיסה",
+    text : "אני אמצא לכם כרטיסי טיסה שמתאימים לכם גם במחיר וגם בתאריכים",
+    icon : "plane"
+  },
+  {
+    title : "תכנון יומי",
+    text : " אני מתכננת מה עושים בכל יום בפירוט עם הדרכה כדי שלכם לא יהיה כאב ראש",
+    icon : "calendar"
+  },
+  {
+    title :"מותאם אישית",
+    text : "הטיולים שאני מתכננת הם מותאמים אישית למה שאתם מחפשים בטיול החלומות שלכם",
+    icon : "map-marked-alt"
+  },
+  {
+    title : "הופעות וארועים",
+    text : "אני גם מציעה חיפוש וקביעת מקומות להופעות, גם בנפרד מתכנון הטיול המלא",
+    icon : "music"
+  }
+
+  
+];
+---
+
+<section
+  id="services"
+  class="section relative bg-white pt-10 pb-8 md:pt-16 md:pb-0"
+>
+  <div class="container mx-auto px-4 xl:max-w-6xl">
+    <!-- Heading start -->
+    <header class="mx-auto mb-12 text-center lg:px-20">
+      <h2 class="mb-2 text-5xl lg:text-7xl font-bold font-heebo leading-normal text-black">
+        כל מה שאתם צריכים כדי להבטיח טיול מוצלח
+      </h2>
+      <svg
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        x="0px"
+        y="0px"
+        viewBox="0 0 100 60"
+        style="margin: 0 auto;height: 35px;"
+        xml:space="preserve"
+      >
+        <circle
+          cx="50.1"
+          cy="30.4"
+          r="5"
+          class="stroke-primary"
+          style="fill: transparent;stroke-width: 2;stroke-miterlimit: 10;"
+        ></circle>
+        <line
+          x1="55.1"
+          y1="30.4"
+          x2="100"
+          y2="30.4"
+          class="stroke-primary"
+          style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+        <line
+          x1="45.1"
+          y1="30.4"
+          x2="0"
+          y2="30.4"
+          class="stroke-primary"
+          style="stroke-width: 2;stroke-miterlimit: 10;"></line>
+      </svg>
+      <p class="mx-auto pb-2 text-xl font-varela font-light leading-relaxed text-gray-500">
+        מכרטיסי טיסה, ועד ליעדים עוצרי הנשימה, אני מתכננת את הטיול המושלם
+            עבורכם.
+      </p>
+    </header>
+    <!-- End heading -->
+    <!-- row -->
+    <div class="-mx-4 flex flex-row flex-wrap text-center">
+      {
+        services.map((service) => (
+        <div
+        class=" w-full js-show-on-scroll max-w-full flex-shrink px-4 sm:w-1/2 lg:w-1/3 lg:px-6"
+        
+        style="visibility: visible;"
+      >
+        <!-- service block -->
+        <div
+          class="mb-12 transform border-b border-gray-100 bg-gray-50 py-8 px-12 transition duration-300 ease-in-out hover:-translate-y-2"
+        >
+          <div class="mb-4 inline-block text-gray-900">
+            <!-- icon -->
+            <i class={`fa-solid fa-${service.icon}`}></i>
+          </div>
+          <h3 class="mb-2 text-lg font-semibold leading-normal text-black">
+            {service.title}
+          </h3>
+          <p class="text-gray-500">
+            {service.text}
+          </p>
+        </div>
+        <!-- end service block -->
+      </div>
+        ))
+      }
+      
+      
+      
+    </div>
+    <!-- end row -->
+  </div>
+</section>

@@ -1,0 +1,68 @@
+---
+---
+
+<section
+  class="relative w-full scroll-m-16 space-y-3 px-12 pb-16 pt-12 text-center"
+  id="contact"
+>
+  <h1 class="font-varela text-4xl font-bold md:text-5xl lg:text-6xl">
+    צרו קשר
+  </h1>
+  <h3 class="font-vare text-2xl">השאירו פרטים ונחזור אליכם בקרוב</h3>
+  <form
+    action="https://formsubmit.co/Ilanitkitzoni@gmail.com"
+    class="mx-auto max-w-5xl space-y-8"
+    onsubmit=""
+    method="post"
+  >
+    <input
+      type="text"
+      name="שם"
+      id="name"
+      class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+      required
+      placeholder="שם מלא"
+    />
+
+    <input
+      type="number"
+      name="טלפון"
+      id="phone"
+      class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+      required
+      placeholder="מספר טלפון"
+    />
+    <select
+      name="תחום"
+      id="reason"
+      required
+      class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+    >
+      <option value="" class="text-black">לחצו כדי לבחור</option>
+      <option value="בר_מצווה" class="text-black">בר מצווה</option>
+      <option value="בת_מצווה" class="text-black">בת מצווה</option>
+      <option value="צילום_זוגות" class="text-black">צילום זוגות</option>
+      <option value="צילום_דורות" class="text-black">צילומי דורות</option>
+      <option value="אירוע_עסקי" class="text-black">ארוע עסקי</option>
+      <option value="אירוע_משפחתי" class="text-black">ארוע משפחתי</option>
+      <option value="צילום_הריון" class="text-black">צילום הריון</option>
+      <option value="צילום_נשיות" class="text-black">צילום נשיות</option>
+      <option value="צילום_תדמית" class="text-black">צילום תדמית</option>
+      <option value="גיל שנה" class="text-black">גיל שנה</option>
+    </select>
+    <textarea
+      id="message"
+      name="הודעה"
+      rows="6"
+      class="block w-full rounded-3xl border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+      style="direction:RTL;"
+      placeholder="הודעה (לא חובה)"></textarea>
+
+    <button
+      type="submit"
+      data-ripple-light="true"
+      class="w-full max-w-4xl rounded-full bg-primary py-2 text-center font-heebo text-xl font-semibold text-white shadow-sm transition-all duration-150 hover:scale-105 hover:shadow-md focus:outline-none focus:ring-4"
+      >חזור אליי!</button
+    >
+  </form>
+</section>
