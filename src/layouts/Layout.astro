@@ -1,91 +1,94 @@
 ---
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
+import Devider from "../components/Devider.astro";
+import Contact from "../components/Contact.astro";
 ---
 
 <!DOCTYPE html>
 <html lang="he" class="scroll-smooth text-center transition-all" dir="rtl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image" href="/ilanit/logo_notext.png" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-		<!-- Fonts -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap"
-			rel="stylesheet"
-		/>
-		<!-- Flowbite -->
-		<link
-			href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
-			rel="stylesheet"
-		/>
-		<!-- Icons -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image" href="/ilanit/logo_notext.png" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Flowbite -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
 
-		<title>{title}</title>
-	</head>
-	<body class="font-sans">
-		<Navbar />
-		<div
-			class="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-y-1 text-[2.5em] lg:bottom-10 lg:left-10 lg:text-[3em]"
-		>
-			<a
-				href="tel:+972508551198"
-				class="z-20 aspect-square w-fit rounded-full bg-blue-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl"
-				><i class="fa-phone fa-solid aspect-square text-white"></i></a
-			>
-			<a
-				href="https://wa.me/message/972508551198"
-				class="z-20 aspect-square w-fit rounded-full bg-green-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl"
-				><i class="fa-whatsapp fa-brands aspect-square text-white"
-				></i></a
-			>
-		</div>
-		<slot />
-		<Footer />
-		<!-- Flowbite -->
-		<script
-			src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
-		></script>
+    <title>{title}</title>
+  </head>
+  <body class="font-sans">
+    <Navbar />
+    <div
+      class="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-y-1 text-[2.5em] lg:bottom-10 lg:left-10 lg:text-[3em]"
+    >
+      <a
+        href="tel:+972587889949"
+        class="z-20 aspect-square w-fit rounded-full bg-blue-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl"
+        ><i class="fa-phone fa-solid aspect-square text-white"></i></a
+      >
+      <a
+        href="https://wa.me/message/972587889949"
+        class="z-20 aspect-square w-fit rounded-full bg-green-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl"
+        ><i class="fa-whatsapp fa-brands aspect-square text-white"></i></a
+      >
+    </div>
+    <slot />
+    <Devider />
+    <Contact />
+    <Footer />
+    <!-- Flowbite -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.4/flowbite.min.js"
+    ></script>
 
-		<!-- Ripple effect -->
-		<script
-			src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"
-		></script>
+    <!-- Ripple effect -->
+    <script
+      src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"
+    ></script>
 
-		<!-- showonfade -->
-		<script>
-			const callback = function (entries: IntersectionObserverEntry[]) {
-				entries.forEach((entry: IntersectionObserverEntry) => {
-					console.log(entry);
+    <!-- showonfade -->
+    <script>
+      const callback = function (entries: IntersectionObserverEntry[]) {
+        entries.forEach((entry: IntersectionObserverEntry) => {
+          console.log(entry);
 
-					if (entry.isIntersecting) {
-						entry.target.classList.add("animate-fadeIn");
-						observer.unobserve(entry.target);
-					} else {
-						entry.target.classList.remove("animate-fadeIn");
-					}
-				});
-			};
-			const observer = new IntersectionObserver(callback);
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fadeIn");
+            observer.unobserve(entry.target);
+          } else {
+            entry.target.classList.remove("animate-fadeIn");
+          }
+        });
+      };
+      const observer = new IntersectionObserver(callback);
 
-			const targets = document.querySelectorAll(".js-show-on-scroll");
-			targets.forEach(function (target) {
-				target.classList.add("opacity-0");
-				observer.observe(target);
-			});
-		</script>
-	</body>
+      const targets = document.querySelectorAll(".js-show-on-scroll");
+      targets.forEach(function (target) {
+        target.classList.add("opacity-0");
+        observer.observe(target);
+      });
+    </script>
+  </body>
 </html>

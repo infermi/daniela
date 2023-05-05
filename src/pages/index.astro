@@ -2,145 +2,183 @@
 import Layout from "../layouts/Layout.astro";
 import Sep from "../components/Sep.astro";
 import Features from "../components/Features.astro";
-import Contact from "../components/Contact.astro";
 import Devider from "../components/Devider.astro";
 ---
 
 <Layout title="The Dream Tour">
-	<main class="relative">
-		<!-- HEADER -->
-		<section class="mb-40">
-			<div
-				class="bg-gray-50 px-6 py-12 text-center text-gray-800 md:px-12 lg:text-right"
-			>
-				<div class="container mx-auto xl:px-32">
-					<div class="grid items-center gap-12 lg:grid-cols-2">
-						<div class="mt-12 lg:mt-0">
-							<h1
-								class="mb-12 font-heebo text-5xl tracking-tight md:text-6xl xl:text-7xl"
-							>
-								מתכננים לכם <br /><span
-									class="font-bold text-primary"
-									>את הטיול המושלם</span
-								>
-							</h1>
-							<a
-								class="inline-block rounded bg-transparent px-7 py-3 text-sm font-semibold uppercase leading-snug text-primary transition duration-150 ease-in-out hover:bg-gray-100 hover:text-dark_primary focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200"
-								data-mdb-ripple="true"
-								data-mdb-ripple-color="light"
-								href="#!"
-								role="button">קרא עוד</a
-							>
-							<a
-								class="mr-2 inline-block rounded bg-primary px-7 py-3 text-sm font-semibold uppercase leading-snug text-white shadow-md transition duration-150 ease-in-out hover:bg-dark_primary hover:shadow-lg focus:ring-0 active:bg-green-800 active:shadow-lg"
-								data-mdb-ripple="true"
-								data-mdb-ripple-color="light"
-								href="#contact  "
-								role="button">צור קשר</a
-							>
-						</div>
-						<div class="mb-12 lg:mb-0">
-							<img
-								src="https://mdbootstrap.com/img/new/ecommerce/vertical/028.jpg"
-								class="w-full rounded-lg shadow-lg"
-								alt=""
-							/>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--  -->
+  <main class="relative">
+    <!-- HEADER -->
+    <section class="">
+      <div
+        class="bg-gray-50 px-6 py-12 text-center text-gray-800 md:px-12 lg:text-right"
+      >
+        <div class="container mx-auto xl:px-32">
+          <div class="grid items-center gap-12 lg:grid-cols-2">
+            <div class="mt-12 lg:mt-0">
+              <h1
+                class="mb-12 font-heebo text-5xl tracking-tight md:text-6xl xl:text-7xl"
+              >
+                מתכננים לכם <br /><span class="font-bold text-primary"
+                  >את הטיול המושלם</span
+                >
+              </h1>
 
-		<!-- ABOUT -->
-		<section class="w-full scroll-m-16 bg-home py-7 text-center" id="about">
-			<div
-				class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
-			>
-				<div class="order-1 w-full md:order-3 lg:w-7/12">
-					<img
-						src="/ilanit/us.jpg"
-						alt=""
-						class="object-cover md:aspect-square"
-					/>
-				</div>
-				<div class="order-2 w-full">
-					<h1 class="font-varela text-4xl font-bold xl:text-5xl">
-						קצת עליי
-					</h1>
-					<Sep />
+              <a
+                class="inline-block rounded bg-primary px-7 py-3 text-base font-semibold uppercase leading-snug text-white shadow-md transition duration-150 ease-in-out hover:bg-dark_primary hover:shadow-lg focus:ring-0 active:bg-green-800 active:shadow-lg"
+                href="#contact  "
+                role="button">צור קשר</a
+              >
+            </div>
+            <div class="mb-12 lg:mb-0">
+              <img
+                src="https://images.unsplash.com/photo-1532339142463-fd0a8979791a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+                class="w-full rounded-lg shadow-lg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="mt-12 flex flex-col items-center">
+          <div class="animate-[bounce_1s_linear_infinite]">
+            <div class="animate-pulse">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class=""
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="-mt-8"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                ></path>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="50"
+                height="50"
+                fill="currentColor"
+                class="-mt-8"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M1.553 6.776a.5.5 0 0 1 .67-.223L8 9.44l5.776-2.888a.5.5 0 1 1 .448.894l-6 3a.5.5 0 0 1-.448 0l-6-3a.5.5 0 0 1-.223-.67z"
+                ></path>
+              </svg>
+            </div>
+          </div>
 
-					<p
-						class="mx-auto max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
-					>
-						תמיד אהבתי לצלם, מאז ומעולם. הייתי זו שרצה עם המצלמה
-						אחרי כולם, בכל נסיעה, אירוע, חוויה וסיטואציה, תופסת את
-						הדקויות, הרגעים הקטנים שאף אחד לא שם אליהם לב, אך
-						המרגשים ביותר, המזכרות שלאחר מכן, כשרואים ומתרגשים מחדש.
-						זו אני שתיעדתי, כזו אני.
-						<br />
-						קוראת ומרגישה את המצולמים שלי, את רגעי השמחה והאושר, הצחוק,
-						החיבוקים, המבטים ורגעי אהבה, חיבורים בין אנשים שיודעת ואוהבת
-						לתעד רגעים משמעותיים ולא במילים.
-						<br />
-						מתרגשת איתם כל פעם מחדש, לקוחות שהופכים לחברים קרובים.
-					</p>
-					<button
-						data-ripple-light="true"
-						class="order-4 mx-auto block rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
-					>
-						קבע שיחת הכירות
-					</button>
-				</div>
-			</div>
-		</section>
-		<!--  -->
+          <span class="font-varela font-bold">קרא עוד</span>
+        </div>
+      </div>
+    </section>
+    <!--  -->
 
-		<Devider />
-		<section class="bg-white dark:bg-gray-900">
-			<div
-				class="mx-auto max-w-screen-xl items-center gap-16 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16"
-			>
-				<div
-					class="font-varela font-light text-gray-500 dark:text-gray-400 sm:text-lg"
-				>
-					<h2
-						class="mb-4 font-heebo text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
-					>
-						טיול שמתאים <span class="text-dark_primary underline"
-							>לכם</span
-						>
-					</h2>
-					<p class="mb-4">
-						מכרטיסי טיסה, ועד ליעדים עוצרי הנשימה, אני מתכננת את
-						הטיול המושלם עבורכם. בין אם אתם מחפשים מוזאונים, טבע, או
-						פשוט לראות את העיר, אני אבנה טיול שיתאים לכם כדי לוודא
-						שהחוויה תהיה בלתי נשכחת
-					</p>
-				</div>
-				<div class="mt-8 grid grid-cols-2 gap-4">
-					<img
-						class="w-full rounded-lg"
-						src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80&ar=9:12"
-						alt="office content 1"
-					/>
-					<img
-						class="mt-4 w-full rounded-lg lg:mt-10"
-						src="https://images.unsplash.com/photo-1571249692357-fd1418f95042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80&ar=9:12"
-						alt="office content 2"
-					/>
-				</div>
-			</div>
-		</section>
+    <Devider />
 
-		<Devider />
+    <section class="bg-white dark:bg-gray-900">
+      <div
+        class="mx-auto max-w-screen-xl items-center gap-16 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16"
+      >
+        <div
+          class="font-varela font-light text-gray-500 dark:text-gray-400 sm:text-lg"
+        >
+          <h2
+            class="mb-4 font-heebo text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+          >
+            טיול שמתאים <span class="text-dark_primary underline">לכם</span>
+          </h2>
+          <p class="mb-4">
+            מכרטיסי טיסה, ועד ליעדים עוצרי הנשימה, אני מתכננת את הטיול המושלם
+            עבורכם. בין אם אתם מחפשים מוזאונים, טבע, או פשוט לראות את העיר, אני
+            אבנה טיול שיתאים לכם כדי לוודא שהחוויה תהיה בלתי נשכחת
+          </p>
+        </div>
+        <div class="mt-8 grid grid-cols-2 gap-4">
+          <img
+            class="w-full rounded-lg"
+            src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80&ar=9:12"
+            alt="office content 1"
+          />
+          <img
+            class="mt-4 w-full rounded-lg lg:mt-10"
+            src="https://images.unsplash.com/photo-1571249692357-fd1418f95042?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80&ar=9:12"
+            alt="office content 2"
+          />
+        </div>
+      </div>
+    </section>
 
-		<!-- SERVICES -->
-		<Features />
-		<!--  -->
+    <Devider />
 
-		<Devider />
+    <!-- TESTIMONIALS -->
+    <!--Carousel-->
+    <!-- <Testimonials /> -->
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core
+      defer
+    ></script>
+    <div class="elfsight-app-95a740b8-31bf-4603-9a07-65d7727d05fa"></div>
+    <!--  -->
 
-		<Contact />
-	</main>
+    <!-- SERVICES -->
+    <Features />
+    <!--  -->
+
+    <!-- ABOUT -->
+    <section
+      class="w-full scroll-m-16 overflow-hidden bg-home py-7 text-center"
+      id="about"
+    >
+      <div
+        class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
+      >
+        <div class="js-show-on-scroll order-1 w-full md:order-3 lg:w-7/12">
+          <img src="/us.jpg" alt="" class="object-cover md:aspect-square" />
+        </div>
+        <div class="order-2 w-full">
+          <h1 class="font-varela text-4xl font-bold xl:text-5xl">נעים להכיר</h1>
+          <Sep />
+
+          <p
+            class="mx-auto max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
+          >
+            תמיד אהבתי לצלם, מאז ומעולם. הייתי זו שרצה עם המצלמה אחרי כולם, בכל
+            נסיעה, אירוע, חוויה וסיטואציה, תופסת את הדקויות, הרגעים הקטנים שאף
+            אחד לא שם אליהם לב, אך המרגשים ביותר, המזכרות שלאחר מכן, כשרואים
+            ומתרגשים מחדש. זו אני שתיעדתי, כזו אני.
+            <br />
+            קוראת ומרגישה את המצולמים שלי, את רגעי השמחה והאושר, הצחוק, החיבוקים,
+            המבטים ורגעי אהבה, חיבורים בין אנשים שיודעת ואוהבת לתעד רגעים משמעותיים
+            ולא במילים.
+            <br />
+            מתרגשת איתם כל פעם מחדש, לקוחות שהופכים לחברים קרובים.
+          </p>
+          <button
+            data-ripple-light="true"
+            class="order-4 mx-auto block rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
+          >
+            קבע שיחת הכירות
+          </button>
+        </div>
+      </div>
+    </section>
+    <!--  -->
+  </main>
 </Layout>
