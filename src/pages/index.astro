@@ -91,15 +91,13 @@ import Devider from "../components/Devider.astro";
 
     <Devider />
 
-    <section class="bg-white dark:bg-gray-900">
+    <section class="bg-white">
       <div
         class="mx-auto max-w-screen-xl items-center gap-16 px-4 py-8 lg:grid lg:grid-cols-2 lg:px-6 lg:py-16"
       >
-        <div
-          class="font-varela font-light text-gray-500 dark:text-gray-400 sm:text-lg"
-        >
+        <div class="font-varela font-light text-gray-500 sm:text-lg">
           <h2
-            class="mb-4 font-heebo text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+            class="mb-4 font-heebo text-4xl font-extrabold tracking-tight text-gray-900"
           >
             טיול שמתאים <span class="text-dark_primary underline">לכם</span>
           </h2>
@@ -111,7 +109,8 @@ import Devider from "../components/Devider.astro";
         </div>
         <div class="mt-8 grid grid-cols-2 gap-4">
           <img
-            class="w-full rounded-lg"
+            class="animate__bounce w-full rounded-lg"
+            data-wow-duration="5s"
             src="https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80&ar=9:12"
             alt="office content 1"
           />
@@ -141,44 +140,54 @@ import Devider from "../components/Devider.astro";
     <Features />
     <!--  -->
 
-    <!-- ABOUT -->
-    <section
-      class="w-full scroll-m-16 overflow-hidden bg-home py-7 text-center"
-      id="about"
-    >
-      <div
-        class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
-      >
-        <div class="js-show-on-scroll order-1 w-full md:order-3 lg:w-7/12">
-          <img src="/us.jpg" alt="" class="object-cover md:aspect-square" />
-        </div>
-        <div class="order-2 w-full">
-          <h1 class="font-varela text-4xl font-bold xl:text-5xl">נעים להכיר</h1>
-          <Sep />
-
-          <p
-            class="mx-auto max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
-          >
-            תמיד אהבתי לצלם, מאז ומעולם. הייתי זו שרצה עם המצלמה אחרי כולם, בכל
-            נסיעה, אירוע, חוויה וסיטואציה, תופסת את הדקויות, הרגעים הקטנים שאף
-            אחד לא שם אליהם לב, אך המרגשים ביותר, המזכרות שלאחר מכן, כשרואים
-            ומתרגשים מחדש. זו אני שתיעדתי, כזו אני.
-            <br />
-            קוראת ומרגישה את המצולמים שלי, את רגעי השמחה והאושר, הצחוק, החיבוקים,
-            המבטים ורגעי אהבה, חיבורים בין אנשים שיודעת ואוהבת לתעד רגעים משמעותיים
-            ולא במילים.
-            <br />
-            מתרגשת איתם כל פעם מחדש, לקוחות שהופכים לחברים קרובים.
-          </p>
-          <button
-            data-ripple-light="true"
-            class="order-4 mx-auto block rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
-          >
-            קבע שיחת הכירות
-          </button>
-        </div>
+    <!-- PROCESS -->
+    <section class="overflow-x-hidden bg-home">
+      <div class="container mx-auto flex flex-col p-6">
+        <h2 class="py-4 text-center font-heebo text-6xl font-bold xl:text-8xl">
+          אז... איך זה עובד?
+        </h2>
+        <div class="divide-y divide-gray-700"></div>
       </div>
     </section>
-    <!--  -->
   </main>
+  <!--  -->
+
+  <!-- ABOUT -->
+  <section
+    class="w-full scroll-m-16 overflow-hidden py-7 text-center"
+    id="about"
+  >
+    <div
+      class="mx-auto flex w-full max-w-screen-xl flex-grow flex-col items-stretch justify-center gap-5 px-3 text-center md:flex-1 md:flex-row md:px-10"
+    >
+      <div class="js-show-on-scroll order-1 w-full md:order-3 lg:w-7/12">
+        <img src="/us.jpg" alt="" class="object-cover md:aspect-square" />
+      </div>
+      <div class="order-2 w-full">
+        <h1 class="font-varela text-4xl font-bold xl:text-5xl">נעים להכיר</h1>
+        <Sep />
+
+        <p
+          class="mx-auto max-w-5xl text-base sm:text-lg md:text-xl xl:text-2xl"
+        >
+          תמיד אהבתי לצלם, מאז ומעולם. הייתי זו שרצה עם המצלמה אחרי כולם, בכל
+          נסיעה, אירוע, חוויה וסיטואציה, תופסת את הדקויות, הרגעים הקטנים שאף אחד
+          לא שם אליהם לב, אך המרגשים ביותר, המזכרות שלאחר מכן, כשרואים ומתרגשים
+          מחדש. זו אני שתיעדתי, כזו אני.
+          <br />
+          קוראת ומרגישה את המצולמים שלי, את רגעי השמחה והאושר, הצחוק, החיבוקים, המבטים
+          ורגעי אהבה, חיבורים בין אנשים שיודעת ואוהבת לתעד רגעים משמעותיים ולא במילים.
+          <br />
+          מתרגשת איתם כל פעם מחדש, לקוחות שהופכים לחברים קרובים.
+        </p>
+        <button
+          data-ripple-light="true"
+          class="order-4 mx-auto block rounded-md bg-primary px-5 py-3 tracking-wider text-text_color transition-all hover:scale-105"
+        >
+          קבע שיחת הכירות
+        </button>
+      </div>
+    </div>
+  </section>
+  <!--  -->
 </Layout>

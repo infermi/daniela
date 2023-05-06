@@ -36,9 +36,20 @@ import Contact from "../components/Contact.astro";
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
 
+    <!-- animate.css -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
+    <!--  -->
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!--  -->
+
     <title>{title}</title>
   </head>
-  <body class="font-sans">
+  <body class="overflow-x-hidden font-sans">
     <Navbar />
     <div
       class="fixed bottom-4 left-4 z-20 flex flex-col items-center gap-y-1 text-[2.5em] lg:bottom-10 lg:left-10 lg:text-[3em]"
@@ -89,6 +100,11 @@ import Contact from "../components/Contact.astro";
         target.classList.add("opacity-0");
         observer.observe(target);
       });
+    </script>
+
+    <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script is:inline>
+      AOS.init({ delay: 100, duration: 1500, once: false });
     </script>
   </body>
 </html>
