@@ -60,7 +60,7 @@ import Contact from "../components/Contact.astro";
         ><i class="fa-phone fa-solid aspect-square text-white"></i></a
       >
       <a
-        href="https://wa.me/message/972587889949"
+        href="https://wa.link/3tsqrg"
         class="z-20 aspect-square w-fit rounded-full bg-green-500 text-slate-600 transition-all duration-150 hover:scale-105 hover:shadow-2xl"
         ><i class="fa-whatsapp fa-brands aspect-square text-white"></i></a
       >
@@ -78,29 +78,6 @@ import Contact from "../components/Contact.astro";
     <script
       src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"
     ></script>
-
-    <!-- showonfade -->
-    <script>
-      const callback = function (entries: IntersectionObserverEntry[]) {
-        entries.forEach((entry: IntersectionObserverEntry) => {
-          console.log(entry);
-
-          if (entry.isIntersecting) {
-            entry.target.classList.add("animate-fadeIn");
-            observer.unobserve(entry.target);
-          } else {
-            entry.target.classList.remove("animate-fadeIn");
-          }
-        });
-      };
-      const observer = new IntersectionObserver(callback);
-
-      const targets = document.querySelectorAll(".js-show-on-scroll");
-      targets.forEach(function (target) {
-        target.classList.add("opacity-0");
-        observer.observe(target);
-      });
-    </script>
 
     <script is:inline src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script is:inline>
