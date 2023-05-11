@@ -1,9 +1,6 @@
 ---
-const SLICELENGTH = "/public".length;
-const PATH = "/daniela";
-const GALLERYIMAGES = await Astro.glob(".././gallery/*").then((files) => {
-  return files.map((file) => file.default);
-});
+const PATH = "/daniela/gallery";
+const GALLERYIMAGES = Array.from({ length: 18 }, (_, i) => i + 1);
 ---
 
 <div class="-z-10 grid grid-cols-2 gap-4 md:grid-cols-4" id="gallery">
@@ -12,7 +9,7 @@ const GALLERYIMAGES = await Astro.glob(".././gallery/*").then((files) => {
       GALLERYIMAGES.slice(0, GALLERYIMAGES.length / 4).map((image) => (
         <div class="">
           <img
-            src={PATH + image.slice(SLICELENGTH)}
+            src={PATH + image + ".jpg"}
             data-aos="fade-up"
             data-aos-once="true"
             loading="lazy"
@@ -32,7 +29,7 @@ const GALLERYIMAGES = await Astro.glob(".././gallery/*").then((files) => {
       ).map((image) => (
         <div class="">
           <img
-            src={PATH + image.slice(SLICELENGTH)}
+            src={PATH + image + ".jpg"}
             loading="lazy"
             data-aos-delay="100"
             data-aos-once="true"
@@ -52,7 +49,7 @@ const GALLERYIMAGES = await Astro.glob(".././gallery/*").then((files) => {
       ).map((image) => (
         <div class="">
           <img
-            src={PATH + image.slice(SLICELENGTH)}
+            src={PATH + image + ".jpg"}
             loading="lazy"
             data-aos-once="true"
             data-aos-delay="100"
@@ -72,7 +69,7 @@ const GALLERYIMAGES = await Astro.glob(".././gallery/*").then((files) => {
       ).map((image) => (
         <div class="">
           <img
-            src={PATH + image.slice(SLICELENGTH)}
+            src={PATH + image + ".jpg"}
             loading="lazy"
             data-aos-delay="100"
             data-aos-once="true"
