@@ -1,9 +1,11 @@
 ---
 const SLICELENGTH = "/public".length;
 const PATH = "/daniela";
-const GALLERYIMAGES = await Astro.glob("/public/gallery/*").then((files) => {
-  return files.map((file) => file.default);
-});
+const GALLERYIMAGES = await Astro.glob("/daniela/public/gallery/*").then(
+  (files) => {
+    return files.map((file) => file.default);
+  }
+);
 ---
 
 <div class="-z-10 grid grid-cols-2 gap-4 md:grid-cols-4" id="gallery">
