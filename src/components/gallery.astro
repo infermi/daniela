@@ -1,7 +1,7 @@
 ---
 const SLICELENGTH = "/public".length;
 const PATH = "/daniela";
-const GALLERYIMAGES = await Astro.glob("../gallery/*").then((files) => {
+const GALLERYIMAGES = await Astro.glob(".././gallery/*").then((files) => {
   return files.map((file) => file.default);
 });
 ---
