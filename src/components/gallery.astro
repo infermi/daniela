@@ -1,0 +1,87 @@
+---
+const SLICELENGTH = "/public".length;
+const PATH = "/daniela";
+const GALLERYIMAGES = await Astro.glob("/public/gallery/*").then((files) => {
+  return files.map((file) => file.default);
+});
+---
+
+<div class="-z-10 grid grid-cols-2 gap-4 md:grid-cols-4" id="gallery">
+  <div class="grid gap-4">
+    {
+      GALLERYIMAGES.slice(0, GALLERYIMAGES.length / 4).map((image) => (
+        <div class="">
+          <img
+            src={PATH + image.slice(SLICELENGTH)}
+            data-aos="fade-up"
+            data-aos-once="true"
+            loading="lazy"
+            data-aos-delay="100"
+            alt=""
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+  <div class="grid gap-4">
+    {
+      GALLERYIMAGES.slice(
+        GALLERYIMAGES.length / 4,
+        GALLERYIMAGES.length / 2
+      ).map((image) => (
+        <div class="">
+          <img
+            src={PATH + image.slice(SLICELENGTH)}
+            loading="lazy"
+            data-aos-delay="100"
+            data-aos-once="true"
+            data-aos="fade-up"
+            alt=""
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+  <div class="grid gap-4">
+    {
+      GALLERYIMAGES.slice(
+        GALLERYIMAGES.length / 2,
+        (GALLERYIMAGES.length / 4) * 3
+      ).map((image) => (
+        <div class="">
+          <img
+            src={PATH + image.slice(SLICELENGTH)}
+            loading="lazy"
+            data-aos-once="true"
+            data-aos-delay="100"
+            alt=""
+            data-aos="fade-up"
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+  <div class="grid gap-4">
+    {
+      GALLERYIMAGES.slice(
+        (GALLERYIMAGES.length / 4) * 3,
+        GALLERYIMAGES.length
+      ).map((image) => (
+        <div class="">
+          <img
+            src={PATH + image.slice(SLICELENGTH)}
+            loading="lazy"
+            data-aos-delay="100"
+            data-aos-once="true"
+            alt=""
+            data-aos="fade-up"
+            class=" h-auto max-w-full rounded-lg transition-all duration-300 ease-out hover:brightness-90"
+          />
+        </div>
+      ))
+    }
+  </div>
+</div>
