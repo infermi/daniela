@@ -2,56 +2,66 @@
 ---
 
 <section
-  class="relative w-full scroll-m-16 space-y-3 px-12 pb-16 pt-12 text-center"
-  id="contact"
+	class="relative w-full scroll-m-16 space-y-3 px-12 pb-16 pt-12 text-center"
+	id="contact"
 >
-  <h1 class="font-varela text-4xl font-bold md:text-5xl lg:text-6xl">
-    צרו קשר
-  </h1>
-  <h3 class="font-vare text-2xl">השאירו פרטים ונחזור אליכם בקרוב</h3>
-  <form
-    action="https://formsubmit.co/LeTourDeReve@gmail.com"
-    class="mx-auto max-w-5xl space-y-8"
-    onsubmit=""
-    method="post"
-  >
-    <input
-      type="text"
-      name="שם"
-      id="name"
-      class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
-      required
-      placeholder="שם מלא"
-    />
+	<h1 class="font-varela text-4xl font-bold md:text-5xl lg:text-6xl">
+		צרו קשר
+	</h1>
+	<h3 class="font-vare text-2xl">השאירו פרטים ונחזור אליכם בקרוב</h3>
+	<div class="mb-6 w-full space-x-2 space-y-3 space-x-reverse text-[3em]">
+		<a href="https://www.facebook.com/DaniellaElkabetz " role="button">
+			<!-- Facebook -->
+			<i class="fa-brands fa-facebook text-blue-500"></i>
+		</a>
+		<a href="mailto:LeTourDeReve@gmail.com" class="w-fit" role="button">
+			<!-- gmail -->
+			<img src="/daniela/gmail.svg" class="inline-block" />
+		</a>
+	</div>
+	<form
+		action="https://formsubmit.co/LeTourDeReve@gmail.com"
+		class="mx-auto max-w-5xl space-y-8"
+		onsubmit=""
+		method="post"
+	>
+		<input
+			type="text"
+			name="שם"
+			id="name"
+			class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+			required
+			placeholder="שם מלא"
+		/>
 
-    <input
-      type="number"
-      name="טלפון"
-      id="phone"
-      class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
-      required
-      placeholder="מספר טלפון"
-    />
-    <input
-      type="text"
-      name="מדינה"
-      id="country"
-      class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
-      placeholder="לאן נוסעים?"
-    />
-    <textarea
-      id="message"
-      name="הודעה"
-      rows="6"
-      class="block w-full rounded-3xl border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
-      style="direction:RTL;"
-      placeholder="הודעה (לא חובה)"></textarea>
+		<input
+			type="number"
+			name="טלפון"
+			id="phone"
+			class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+			required
+			placeholder="מספר טלפון"
+		/>
+		<input
+			type="text"
+			name="מדינה"
+			id="country"
+			class="block w-full rounded-full border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+			placeholder="לאן נוסעים?"
+		/>
+		<textarea
+			id="message"
+			name="הודעה"
+			rows="6"
+			class="block w-full rounded-3xl border border-gray-300 bg-gray-50 p-2.5 text-base text-gray-900 shadow-sm"
+			style="direction:RTL;"
+			placeholder="הודעה (לא חובה)"></textarea>
 
-    <button
-      type="submit"
-      data-ripple-light="true"
-      class="w-full max-w-4xl rounded-full bg-primary py-2 text-center font-heebo text-xl font-semibold text-white shadow-sm transition-all duration-150 hover:scale-105 hover:shadow-md focus:outline-none focus:ring-4"
-      >שלח</button
-    >
-  </form>
+		<button
+			type="submit"
+			data-ripple-light="true"
+			class="w-full max-w-4xl rounded-full bg-primary py-2 text-center font-heebo text-xl font-semibold text-white shadow-sm transition-all duration-150 hover:scale-105 hover:shadow-md focus:outline-none focus:ring-4"
+			>שלח</button
+		>
+	</form>
 </section>
